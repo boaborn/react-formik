@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 
 import Routes from './routes'
 import '../less/style.less'
-import { withFormik, Form, Field } from 'formik'
+import { withFormik, Form, Field, ErrorMessage } from 'formik'
 import * as Yup from 'yup'
 
 // desturct props from formik
@@ -16,7 +16,8 @@ const App = ({
   return (
     <Form>
       <div>
-        { (touched.email && errors.email && <p>{ errors.email }</p>) }
+        { /* { (touched.email && errors.email && <p>{ errors.email }</p>) } */ }
+        <ErrorMessage name="email" />
         <Field type="email" name="email" placeholder="Email"/>
       </div>
       <div>
