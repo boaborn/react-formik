@@ -1,0 +1,38 @@
+{
+  "name": "react-mobx-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "dev": "webpack-dev-server --content-base src --inline --hot --https --host 0.0.0.0 --port 8888 --progress",
+    "build": "NODE_ENV=production webpack -p --config ./webpack.config.js --progress",
+    "builddev": "NODE_ENV=development webpack -p --config ./webpack.config.js --progress",
+    "watch": "npm run builddev -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:boaborn/react-mobx-starter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-react-html-attrs": "^2.1.0",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+ 
+    "babel-preset-stage-0": "^6.24.1",
+    
+    
+    "css-loader": "^0.28.11",
+    "style-loader": "^0.21.0",
+    
+    "morgan": "^1.9.0",
+    "superagent": "^3.8.3",
+    "xml-js": "^1.6.2"
+  },
+  "devDependencies": {
+    
+  }
+}
